@@ -40,3 +40,12 @@ function chpwd() {
 	
 }
 ```
+
+## Troubleshooting
+
+On Mac, Apple may block the gitSwitcher script from running
+
+This means you will have to run this command in terminal to remove the quarantine flag
+
+`xattr -d com.apple.quarantine PATH_TO_SCRIPT`
+
