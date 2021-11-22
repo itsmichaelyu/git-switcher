@@ -14,18 +14,6 @@ zsh
 
 This will require editing of the gitSwitcher.zsh and .zprofile files
 
-The URL line will probably work, but depends on how your git is configured
-You will likely have to test this to see if it works or not
-
-The email line will depend on what line your email is located in your git config file
-
-To edit the line number your email or url is located at just change the `9p` or `7p` to the correct number
-```
-URL=$(sed -n 9p .git/config)
-EMAIL=$(sed -n 7p ~/.gitconfig)
-```
-
-
 To add your email and GPG key that you want to automatically switch between
 Change the GITLAB_EMAIL to your email and so on for the rest of them in the gitSwitcher.zsh file
 
