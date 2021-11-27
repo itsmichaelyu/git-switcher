@@ -13,6 +13,8 @@ echo Git$SUB Set!
 
 function chpwd() {
     emulate -L zsh
-    # PUT BELOW PATH TO GIT SWITCHER SCRIPT
-	
+    # REPLACE PATH WITH YOUR PATH TO GIT SWITCHER SCRIPT
+    # EX:
+    # ~/.oh-my-zsh/custom/gitSwitcher.zsh 2>/dev/null
+    PATH 2>/dev/null	
 }
