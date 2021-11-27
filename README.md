@@ -17,7 +17,7 @@ This will require editing of the gitSwitcher.zsh and .zprofile files
 To add your email and GPG key that you want to automatically switch between
 Change the GITLAB_EMAIL to your email and so on for the rest of them in the gitSwitcher.zsh file
 
-> GPG key line could be commented out if you do not use GPG
+> user.signingkey line could be commented out if you do not use GPG
 
 ```
 if [[ "$SITE" = "gitlab" && "git$SUB" != gitlab ]]; then		
@@ -36,8 +36,10 @@ Finally add the path to your gitSwitcher.zsh script in to the .zprofile
 ```
 function chpwd() {
     emulate -L zsh
-    # PUT BELOW PATH TO GIT SWITCHER SCRIPT
-	
+    # REPLACE PATH WITH YOUR PATH TO GIT SWITCHER SCRIPT
+    # EX:
+    # ~/.oh-my-zsh/custom/gitSwitcher.zsh 2>/dev/null
+    PATH 2>/dev/null
 }
 ```
 
